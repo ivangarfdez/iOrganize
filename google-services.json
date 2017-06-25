@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "216814457305",
+    "firebase_url": "https://proyectointegradoiorganize.firebaseio.com",
+    "project_id": "proyectointegradoiorganize",
+    "storage_bucket": "proyectointegradoiorganize.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216814457305:android:bc85241e8ad451a8",
+        "android_client_info": {
+          "package_name": "dam.proyectointegradoiorganize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216814457305-7b75p0hc94udkelia0mjsh3gdomc5l07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbWs6NssZRho-sxJNPeQ1Fjycn7FAB3jQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
