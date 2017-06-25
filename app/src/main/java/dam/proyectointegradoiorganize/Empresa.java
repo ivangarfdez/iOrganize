@@ -15,6 +15,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -45,7 +46,7 @@ public class Empresa extends AppCompatActivity {
                 final int posicion=i;
 
                 AlertDialog.Builder dialogo1 = new AlertDialog.Builder(Empresa.this);
-                dialogo1.setTitle("Importante");
+                dialogo1.setTitle("Eliminar");
                 dialogo1.setMessage("¿ Elimina esta empresa ?");
                 dialogo1.setCancelable(false);
                 dialogo1.setPositiveButton("Confirmar", new DialogInterface.OnClickListener() {
@@ -66,12 +67,24 @@ public class Empresa extends AppCompatActivity {
     }
 
     public void agregar(View v) {
-        empresas.add(et2.getText().toString()+":  "+" "+et1.getText().toString());
-        adaptador1.notifyDataSetChanged();
-        et1.setText("");
-        et2.setText("");
 
 
+        String dos = this.et2.getText().toString();
+        String uno = this.et1.getText().toString();
+
+
+        if (dos.equals("") || uno.equals("")) {
+            Toast.makeText(this, "Ha dejado campos vacios",
+                    Toast.LENGTH_LONG).show();
+        } else {
+
+            empresas.add(et2.getText().toString() + ":  " + " " + et1.getText().toString());
+            adaptador1.notifyDataSetChanged();
+
+            et1.setText("");
+            et2.setText("");
+
+        }
     }
 }
 
