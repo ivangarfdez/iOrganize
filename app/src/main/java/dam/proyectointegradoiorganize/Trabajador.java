@@ -84,7 +84,7 @@ public class Trabajador extends AppCompatActivity {
                     Toast.LENGTH_LONG).show();
         } else {
 
-            trabajadores.add(et2.getText().toString() + ":  " + " " + et4.getText().toString() + " Años          " + " " + et3.getText().toString() + " " + "  " + " " + et1.getText().toString());
+            trabajadores.add(et2.getText().toString() + ":  " + " " + et3.getText().toString() + " Años          " + " " + et4.getText().toString() + " " + "  " + " " + et1.getText().toString());
 
             adaptador1.notifyDataSetChanged();
             et1.setText("");
